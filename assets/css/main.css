@@ -1,22 +1,16 @@
 @import "reset.css";
 
-@font-face {
-    font-family: 'open_sansregular';
-    src: url('OpenSans-Regular-webfont.eot');
-    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('OpenSans-Regular-webfont.woff2') format('woff2'),
-         url('OpenSans-Regular-webfont.woff') format('woff'),
-         url('OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+body {
+  background-color: #f9f9f9;
+  font-family: open_sansregular, sans-serif;
+  font-size: 11pt;
 }
 
 .container {
   background: #FFFFFF;
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
-  width: 1060px;
-  height: 950px;
+  width: 960px;
+  height: 840px;
   margin-left: auto;
   margin-right: auto;
   padding: 50px 50px 60px 50px;
@@ -30,17 +24,98 @@ img {
   height: 40px;
   width: auto;
    background: linear-gradient(to top, #444343, #5e5e5e);
+   margin-bottom: 40px;
 }
 
-.links {
-  display: inline-block;
-  height: 40px;
-  float: left;
-  padding: 20px;
-  font: OpenSans;
-  text-shadow: 0 1px 0 black;
-  text-align: center;
-  font-size: 11pt;
-  color: white;
+li {
+  line-height: 40px;
+}
 
+.menu li {
+  display: inline-block;
+  text-shadow: 0 1px 0 black;
+  font-size: 13pt;
+  color: white;
+  width: 140px;
+  text-align: center;
+}
+
+.menu li:hover {
+  background-color: rgba(0,0,0,0.2);
+  border-right: 1px solid #838383;
+  border-left: 1px solid #838383;
+}
+
+section {
+  display: block;
+}
+
+.leftmenu {
+  float: left;
+}
+
+.leftmenu li {
+  display: block;
+  color: #656363;
+  width: 214px;
+  padding-left: 24px;
+  border: solid 1px #c8c8c8;
+}
+
+.leftmenu li:hover {
+  background-color: #f9f9f9;
+  color: #2c2c2c;
+  padding-left: 36px;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  float: none;
+  clear: both;
+}
+
+p {
+  width: 660px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.image,
+p {
+  display: inline-block;
+  float: right;
+  line-height: 20px;
+  font-size: 10pt;
+}
+
+.image img {
+  border: 1px solid #c8c8c8;
+  padding: 45px 90px 45px 90px;
+}
+
+.fmenu  {
+  display: block;
+  background: #e1e1e1;
+  height: 40px;
+  width: 960px;
+  float: left;
+}
+
+.fmenu li {
+  display: inline-block;
+  font-size: 12pt;
+  width: 140px;
+  text-align: center;
+}
+
+.fmenu li:hover {
+  text-decoration: underline;
+}
+
+.fmenu li:last-child {
+  width: auto;
+  float: right;
+  padding-right: 25px;
+  text-decoration: none;
 }
