@@ -62,7 +62,7 @@ section {
   border: solid 1px #c8c8c8;
 }
 
-.leftmenu li:hover {
+.leftmenu span:hover {
   background-color: #f9f9f9;
   color: #2c2c2c;
   padding-left: 36px;
